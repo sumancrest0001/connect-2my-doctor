@@ -1,0 +1,64 @@
+.side-nav {
+  max-width: 36rem;
+  width: 30%;
+  padding: 2.5rem 0.5rem 2.5rem 2rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    font-size: 2.5rem;
+    line-height: 3.3rem;
+    letter-spacing: 0.25px;
+    font-weight: 700;
+    padding-left: 1.4rem;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 0.5rem 2rem 0.5rem 3.4rem;
+    border: none;
+    border-bottom: 1px solid rgb(107, 121, 128, 0.53);
+    opacity: 0.53;
+  }
+  .search-icon {
+    position: absolute;
+    top: 0.5rem;
+    left: 1.4rem;
+  }
+  ::placeholder {
+    color: #6b7980;
+    opacity: 0.53;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
+  .list {
+    margin: 2rem 0;
+    flex-grow: 1;
+    overflow-y: auto;
+
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.8rem;
+      line-height: 2.3rem;
+      color: #011d29;
+      padding: 1.4rem;
+      margin-right: 1.5rem;
+      opacity: 100%;
+    }
+
+    .list__icon {
+      display: none;
+    }
+
+    .active {
+      background-color: #ecf4f8;
+
+      .list__icon {
+        display: inline-block;
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;700&display=swap");
+@import "top-nav";
+@import "footer";
+@import "side-nav";
+@import "main-section";
+@import "shared";
+@import "doctor-card";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background: #f5f6f8 0% 0% no-repeat padding-box;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  color: #011d29;
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb:hover {
+  width: 4px;
+  color: #e2e2e2;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

@@ -1,0 +1,110 @@
+.doctor-card {
+  display: flex;
+  padding: 2.5rem;
+  padding-bottom: 2rem;
+  margin-bottom: 1.5rem;
+
+  .doctor__profile {
+    height: 100%;
+    width: auto;
+  }
+
+  .doctor__right-section {
+    width: calc(100% - 14rem);
+    display: flex;
+    justify-content: space-between;
+  }
+  .doctor__main-section {
+    max-width: 46rem;
+    color: #011d29;
+    padding-left: 1.5rem;
+
+    .doctor__header {
+      font-size: 2rem;
+      line-height: 2.7rem;
+      letter-spacing: 0.2px;
+      text-align: left;
+      font-weight: 700;
+    }
+    .doctor__tick-icon {
+      margin-left: 1rem;
+    }
+    .doctor__sub-header {
+      margin-top: 0.8rem;
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      letter-spacing: 0.14px;
+      text-align: left;
+
+      span {
+        padding-right: 1rem;
+      }
+
+      .vertical-divider {
+        color: #e5e4e4;
+      }
+    }
+    .horizontal-divider {
+      content: none;
+      width: full;
+      height: 1px;
+      background-color: #e5e4e4;
+      margin: 1.5rem 0;
+    }
+    .doctor__bio {
+      width: 85%;
+      font-size: 1.3rem;
+      line-height: 2.2rem;
+      &-topic {
+        font-weight: 500;
+      }
+
+      &-sub-topic {
+        font-weight: 400;
+      }
+    }
+
+    .doctor__hospital-logo {
+      margin-top: 2rem;
+    }
+  }
+
+  .doctor__cta-section {
+    width: 24rem;
+  }
+  .doctor__appointment-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+  .doctor__time,
+  .doctor__fee {
+    display: flex;
+    align-content: center;
+    span {
+      margin-left: 1rem;
+    }
+  }
+  .doctor__appointment-btn,
+  .doctor__profile-btn {
+    width: 100%;
+    text-align: center;
+    padding-top: 1.3rem;
+    padding-bottom: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    border-radius: 3px;
+  }
+
+  .doctor__appointment-btn {
+    background-color: #208ce1;
+    color: #ffffff;
+  }
+
+  .doctor__profile-btn {
+    border: 1px solid #208ce1;
+    background-color: transparent;
+    margin-top: 2.3rem;
+  }
+}
